@@ -23,7 +23,7 @@
         <div class="row justify-content-end m-3">
             <div class="col-auto">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#nuevoPoderModal">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#nuevoPoderModal" id="nuevoPoderBoton">
                     Nuevo poder
                 </button>
             </div>
@@ -67,7 +67,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="nuevoPoderModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="nuevoPoderModalLabel">Reporta un nuevo poder</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -75,24 +75,24 @@
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
-                            <label for="exampleFormControlSelect1">Example select</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                            <label for="villanos">Villanos</label>
+                            <select class="form-control" id="villanos">
+                                <option value="X">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Example textarea</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <label for="superPoder">Example textarea</label>
+                            <textarea class="form-control" id="superPoder" rows="3"></textarea>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary" id="agregarNuevoPoderBoton">Save changes</button>
                 </div>
             </div>
         </div>
@@ -104,6 +104,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+
+        <script src="./js/index.js"></script>
 </body>
 
 </html>
